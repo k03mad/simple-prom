@@ -1,0 +1,36 @@
+{
+  "name": "@k03mad/simple-prom",
+  "version": "1.0.0",
+  "description": "Simple prom-client library",
+  "maintainers": [
+    "Kirill Molchanov <k03.mad@gmail.com"
+  ],
+  "main": "app/index.js",
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/k03mad/simple-prom.git"
+  },
+  "license": "MIT",
+  "type": "module",
+  "engines": {
+    "node": ">=20"
+  },
+  "dependencies": {
+    "@k03mad/simple-log": "2.1.0",
+    "prom-client": "15.1.0"
+  },
+  "devDependencies": {
+    "@k03mad/eslint-config": "19.3.0",
+    "eslint": "8.56.0",
+    "husky": "8.0.3"
+  },
+  "scripts": {
+    "lint": "npm run lint:eslint",
+    "lint:eslint": "eslint ./ --cache",
+    "clean": "npm run clean:modules && npm run clean:eslint:cache",
+    "clean:modules": "rm -rf ./node_modules || true",
+    "clean:eslint:cache": "rm -rf .eslintcache || true",
+    "setup": "npm run clean && npm i",
+    "prepare": "husky install || true"
+  }
+}
