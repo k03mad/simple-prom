@@ -1,1 +1,1 @@
-export * from './lib/prom.js';
+export * from './lib/register.js';

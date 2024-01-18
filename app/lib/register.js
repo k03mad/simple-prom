@@ -34,4 +34,6 @@ export const registerMetrics = ({app, port, metrics}) => {
 
             register.registerMetric(gauge);
         });
+
+    return register;
 };
