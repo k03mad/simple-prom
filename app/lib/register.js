@@ -5,15 +5,15 @@ import client from 'prom-client';
 
 /**
  * @param {object} opts
- * @param {string} opts.app
+ * @param {string} opts.appName
  * @param {string|number} opts.port
  * @param {object} opts.metrics
  */
-export const registerMetrics = ({app, port, metrics}) => {
+export const registerMetrics = ({appName, port, metrics}) => {
     const register = new client.Registry();
 
     client.collectDefaultMetrics({register});
-    register.setDefaultLabels({app, port, host: os.hostname});
+    register.setDefaultLabels({app: appName, port, host: os.hostname});
 
     Object
         .values(metrics)
