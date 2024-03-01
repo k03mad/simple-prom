@@ -9,8 +9,8 @@ dependencies:
     specifier: 1.0.1
     version: 1.0.1
   '@k03mad/simple-log':
-    specifier: 2.1.1
-    version: 2.1.1
+    specifier: 2.1.2
+    version: 2.1.2
   chalk:
     specifier: 5.3.0
     version: 5.3.0
@@ -170,8 +170,8 @@ packages:
     engines: {node: '>=20'}
     dev: false
 
-  /@k03mad/simple-log@2.1.1:
-    resolution: {integrity: sha512-xhW93+N0Q9WEMWs+fD6WYgg+vwsUJlunLl2CafmYbfRbdsxVhEZ/k1pJ9gtJUHLVU/gY2xSTCzrFXWlxpnIxaQ==}
+  /@k03mad/simple-log@2.1.2:
+    resolution: {integrity: sha512-n86s76oZ9zGwFDcYREU5N8lsvuMH/y3noPKKb8z447CtkYtqET3ZC2IraHYaRabkUST2Btl9+D4Oyf7+Zt4Nzw==}
     engines: {node: '>=20'}
     dependencies:
       '@k03mad/simple-date': 1.0.1
