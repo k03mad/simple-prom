@@ -6,8 +6,8 @@ settings:
 
 dependencies:
   '@k03mad/simple-date':
-    specifier: 1.0.1
-    version: 1.0.1
+    specifier: 1.0.2
+    version: 1.0.2
   '@k03mad/simple-log':
     specifier: 2.1.2
     version: 2.1.2
@@ -172,6 +172,11 @@ packages:
 
   /@k03mad/simple-date@1.0.1:
     resolution: {integrity: sha512-2jf6gfmg8Td1iO4DZvFyoTNWW4UyltHPYDwoM77trFHqaRXT3dMuTHGf1MpsshnH+ce8ZETmF1d+DBpfT2EUNA==}
+    engines: {node: '>=20'}
+    dev: false
+
+  /@k03mad/simple-date@1.0.2:
+    resolution: {integrity: sha512-BKnoXTLN2WzQrUGUSSN8Snls7s1ceTTegI7M7tai5a3QDlic6R3D5oXREEGPqq0JJ9nOmItEywqnqZS6VTHcQA==}
     engines: {node: '>=20'}
     dev: false
 
