@@ -14,10 +14,11 @@ import {registerMetrics} from './register.js';
  * @param {string} opts.appName
  * @param {string|number} opts.port
  * @param {object} opts.metrics
+ * @param {string[]} opts.metricsTurnOff
  * @param {boolean} opts.debug
  */
-export const startMetricsServer = ({appName, port, metrics, debug}) => {
-    const register = registerMetrics({appName, port, metrics});
+export const startMetricsServer = ({appName, port, metrics, metricsTurnOff, debug}) => {
+    const register = registerMetrics({appName, port, metrics, metricsTurnOff});
 
     const app = express();
 
