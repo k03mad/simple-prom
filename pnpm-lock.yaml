@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@k03mad/simple-date':
-        specifier: 1.2.0
-        version: 1.2.0
+        specifier: 2.0.0
+        version: 2.0.0
       '@k03mad/simple-log':
         specifier: 2.3.0
         version: 2.3.0
@@ -98,6 +98,10 @@ packages:
 
   '@k03mad/simple-date@1.2.0':
     resolution: {integrity: sha512-Xap6IBGEKAQmzmub7JSDZBvHUi1VMOZAjiAoTwJv8rK00P/46VVrnLkAnEN3zmg8AS6wBCSNGAOkARBsBw0t6Q==}
+    engines: {node: '>=20'}
+
+  '@k03mad/simple-date@2.0.0':
+    resolution: {integrity: sha512-S0awuWgfhTFl33GHPHu4uPobYZva2D2zpZLfjjZ8wfyGpF+MDLi7dH6ADIAuNt34H5deriFLT27VBjPEJp3yFg==}
     engines: {node: '>=20'}
 
   '@k03mad/simple-log@2.3.0':
@@ -1641,6 +1645,8 @@ snapshots:
       - vue-eslint-parser
 
   '@k03mad/simple-date@1.2.0': {}
+
+  '@k03mad/simple-date@2.0.0': {}
 
   '@k03mad/simple-log@2.3.0':
     dependencies:
