@@ -12,8 +12,8 @@ importers:
         specifier: 2.0.0
         version: 2.0.0
       '@k03mad/simple-log':
-        specifier: 4.0.0
-        version: 4.0.0
+        specifier: 4.1.0
+        version: 4.1.0
       chalk:
         specifier: 5.3.0
         version: 5.3.0
@@ -737,16 +737,12 @@ packages:
     resolution: {integrity: sha512-HSGIHsw/fKqMNAk5VWALNLaX+SxBMy9BhApMM32asJMRROMmhhDNhM+hJ8OUQaaMjMNsLvdrEMaT9/Jt6Hw/BQ==}
     engines: {node: '>=20'}
 
-  '@k03mad/simple-date@1.2.0':
-    resolution: {integrity: sha512-Xap6IBGEKAQmzmub7JSDZBvHUi1VMOZAjiAoTwJv8rK00P/46VVrnLkAnEN3zmg8AS6wBCSNGAOkARBsBw0t6Q==}
-    engines: {node: '>=20'}
-
   '@k03mad/simple-date@2.0.0':
     resolution: {integrity: sha512-S0awuWgfhTFl33GHPHu4uPobYZva2D2zpZLfjjZ8wfyGpF+MDLi7dH6ADIAuNt34H5deriFLT27VBjPEJp3yFg==}
     engines: {node: '>=20'}
 
-  '@k03mad/simple-log@4.0.0':
-    resolution: {integrity: sha512-jo2/m12JC8wuA1Ctk7ZpO57mOfYbIlp2Q4ioI7ORaUKx91OPXR6t2v477TTQNdE1AZU9rh3xxKHl2ztZZduXtQ==}
+  '@k03mad/simple-log@4.1.0':
+    resolution: {integrity: sha512-E7oLF1JknzYUGdNUF/lNFlpgGoLA7gYO+g8BPauuv+904vbfXvCqvkVblbpa2dLOcDcwbawB9MniF6I1Ov9X/w==}
     engines: {node: '>=20'}
 
   '@nicolo-ribaudo/eslint-scope-5-internals@5.1.1-v1':
@@ -3470,13 +3466,11 @@ snapshots:
       - typescript
       - vue-eslint-parser
 
-  '@k03mad/simple-date@1.2.0': {}
-
   '@k03mad/simple-date@2.0.0': {}
 
-  '@k03mad/simple-log@4.0.0':
+  '@k03mad/simple-log@4.1.0':
     dependencies:
-      '@k03mad/simple-date': 1.2.0
+      '@k03mad/simple-date': 2.0.0
 
   '@nicolo-ribaudo/eslint-scope-5-internals@5.1.1-v1':
     dependencies:
