@@ -1,6 +1,6 @@
 {
   "name": "@k03mad/simple-prom",
-  "version": "4.1.0",
+  "version": "4.2.0",
   "description": "Simple prom-client library",
   "maintainers": [
     "Kirill Molchanov <k03.mad@gmail.com"
@@ -26,9 +26,9 @@
     "prom-client": "15.1.3"
   },
   "devDependencies": {
-    "@k03mad/eslint-config": "26.3.0",
-    "eslint": "9.15.0",
-    "husky": "9.1.6"
+    "@k03mad/eslint-config": "28.0.0",
+    "eslint": "9.16.0",
+    "husky": "9.1.7"
   },
   "scripts": {
     "lint": "npm run lint:eslint",
