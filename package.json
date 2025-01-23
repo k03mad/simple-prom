@@ -1,6 +1,6 @@
 {
   "name": "@k03mad/simple-prom",
-  "version": "4.3.0",
+  "version": "4.3.1",
   "description": "Simple prom-client library",
   "maintainers": [
     "Kirill Molchanov <k03.mad@gmail.com"
@@ -16,8 +16,8 @@
     "node": ">=22"
   },
   "dependencies": {
-    "@k03mad/simple-date": "4.2.0",
-    "@k03mad/simple-log": "5.2.0",
+    "@k03mad/simple-date": "4.2.1",
+    "@k03mad/simple-log": "5.2.1",
     "chalk": "5.4.1",
     "compression": "1.7.5",
     "express": "4.21.2",
@@ -26,8 +26,8 @@
     "prom-client": "15.1.3"
   },
   "devDependencies": {
-    "@k03mad/eslint-config": "28.3.0",
-    "eslint": "9.17.0",
+    "@k03mad/eslint-config": "28.4.0",
+    "eslint": "9.18.0",
     "husky": "9.1.7"
   },
   "scripts": {
