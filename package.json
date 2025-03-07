@@ -19,7 +19,7 @@
     "@k03mad/simple-date": "4.2.1",
     "@k03mad/simple-log": "5.2.1",
     "chalk": "5.4.1",
-    "compression": "1.7.5",
+    "compression": "1.8.0",
     "express": "4.21.2",
     "helmet": "8.0.0",
     "morgan": "1.10.0",
