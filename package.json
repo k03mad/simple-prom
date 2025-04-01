@@ -20,7 +20,7 @@
     "@k03mad/simple-log": "5.2.1",
     "chalk": "5.4.1",
     "compression": "1.8.0",
-    "express": "4.21.2",
+    "express": "5.1.0",
     "helmet": "8.0.0",
     "morgan": "1.10.0",
     "prom-client": "15.1.3"
