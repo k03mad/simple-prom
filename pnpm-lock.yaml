@@ -9,8 +9,8 @@ importers:
   .:
     dependencies:
       '@k03mad/simple-date':
-        specifier: 4.4.0
-        version: 4.4.0
+        specifier: 4.5.0
+        version: 4.5.0
       '@k03mad/simple-log':
         specifier: 5.3.0
         version: 5.3.0
@@ -148,8 +148,8 @@ packages:
     resolution: {integrity: sha512-81Md+wcxEgMLNMljyoatEBf4iEfvqyNM3Zoc6WiS/5fJTn/PHyVBtvGzfOZMXldNIQHLbVl/IOaVwttoNLx6FA==}
     engines: {node: '>=22'}
 
-  '@k03mad/simple-date@4.4.0':
-    resolution: {integrity: sha512-e9eGqR7TTPPIKo263bhkQIkB+bbfn83Yu0J93RsG1AYX+EWC7+zu5hE8riRxrtQ5dNWgsJipBdA1T61cl9pvug==}
+  '@k03mad/simple-date@4.5.0':
+    resolution: {integrity: sha512-aZWAOKWhd5HJtK/9W0v/zjraqpHkaMCpdqnMNCCVX7tARMXN6F8yFkN9iMOk0KZRgAslSJiYyTtl3weHRPy5EQ==}
     engines: {node: '>=22'}
 
   '@k03mad/simple-log@5.3.0':
@@ -1368,7 +1368,7 @@ snapshots:
 
   '@k03mad/simple-date@4.3.0': {}
 
-  '@k03mad/simple-date@4.4.0': {}
+  '@k03mad/simple-date@4.5.0': {}
 
   '@k03mad/simple-log@5.3.0':
     dependencies:
