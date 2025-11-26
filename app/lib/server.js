@@ -1,5 +1,3 @@
-import {getDateYMDHMS} from '@k03mad/simple-date';
-import {log} from '@k03mad/simple-log';
 import compression from 'compression';
 import express from 'express';
 import helmet from 'helmet';
@@ -34,8 +32,8 @@ export const startMetricsServer = ({appName, port, metrics, metricsTurnOff, debu
         res.send(data);
     });
 
-    app.listen(port, () => log([
-        `[${getDateYMDHMS()}]`,
+    app.listen(port, () => console.log([
+        `[${String(new Date())}]`,
         nameText(appName),
         'started on port',
         numText(port),

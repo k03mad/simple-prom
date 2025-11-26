@@ -1,6 +1,5 @@
 import os from 'node:os';
 
-import {logError} from '@k03mad/simple-log';
 import client from 'prom-client';
 
 /**
@@ -34,7 +33,8 @@ export const registerMetrics = ({appName, port, metrics, metricsTurnOff = []}) =
                     try {
                         await collect(this);
                     } catch (err) {
-                        logError([`>> ${name}`, err]);
+                        console.error(`>> ${name}`);
+                        console.error(err);
                     }
                 },
             });
