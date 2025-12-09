@@ -6,15 +6,17 @@ import client from 'prom-client';
  * @param {object} opts
  * @param {string} opts.appName
  * @param {string|number} opts.port
- * @param {object} opts.metrics
+ * @param {object} [opts.metrics]
  * @param {string[]} [opts.metricsTurnOff]
  */
 export const registerMetrics = ({appName, port, metrics, metricsTurnOff = []}) => {
-    const filteredMetrics = Object.fromEntries(
-        Object.entries(metrics).filter(
-            ([key]) => !metricsTurnOff.includes(key),
-        ),
-    );
+    const filteredMetrics = metrics
+        ? Object.fromEntries(
+            Object.entries(metrics).filter(
+                ([key]) => !metricsTurnOff.includes(key),
+            ),
+        )
+        : {};
 
     const register = new client.Registry();
 
