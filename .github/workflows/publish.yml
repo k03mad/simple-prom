@@ -33,5 +33,3 @@ jobs:
 
       - if: steps.check_pkg_version.outputs.changed == 'true'
         run: npm publish
-        env:
-          NODE_AUTH_TOKEN: ${{ secrets.NPM_TOKEN }}
