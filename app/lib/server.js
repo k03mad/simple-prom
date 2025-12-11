@@ -33,8 +33,7 @@ export const startMetricsServer = ({appName, port, metrics, metricsTurnOff, debu
     });
 
     app.listen(port, () => console.log([
-        `[${String(new Date())}]`,
-        nameText(appName),
+        `[${String(new Date())}]\n${nameText(appName)}`,
         'started on port',
         numText(port),
     ].join(' ')));
