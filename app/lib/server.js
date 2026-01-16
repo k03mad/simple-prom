@@ -14,9 +14,9 @@ import {registerMetrics} from './register.js';
  * @param {object} opts.metrics
  * @param {string[]} opts.metricsTurnOff
  * @param {boolean} opts.debug
- * @param {string} opts.staticFolder
+ * @param {string} opts.static
  */
-export const startMetricsServer = ({appName, port, metrics, metricsTurnOff, debug, staticFolder}) => {
+export const startMetricsServer = ({appName, port, metrics, metricsTurnOff, debug, static: staticOpts}) => {
     const register = registerMetrics({appName, port, metrics, metricsTurnOff});
 
     const app = express();
@@ -25,11 +25,18 @@ export const startMetricsServer = ({appName, port, metrics, metricsTurnOff, debu
         app.use(morgan('combined'));
     }
 
-    app.use(helmet());
     app.use(compression());
 
-    if (staticFolder) {
-        app.use(express.static(staticFolder));
+    if (staticOpts.folder) {
+        if (staticOpts.beforeHelmet) {
+            app.use(express.static(staticOpts.folder));
+            app.use(helmet());
+        } else {
+            app.use(helmet());
+            app.use(express.static(staticOpts.folder));
+        }
+    } else {
+        app.use(helmet());
     }
 
     app.get('/metrics', async (req, res) => {
