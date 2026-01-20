@@ -1,6 +1,6 @@
 {
   "name": "@k03mad/simple-prom",
-  "version": "9.2.0",
+  "version": "9.3.0",
   "description": "Simple prom-client library",
   "maintainers": [
     "Kirill Molchanov <k03.mad@gmail.com"

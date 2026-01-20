@@ -27,7 +27,7 @@ export const startMetricsServer = ({appName, port, metrics, metricsTurnOff, debu
 
     app.use(compression());
 
-    if (staticOpts.folder) {
+    if (staticOpts?.folder) {
         if (staticOpts.beforeHelmet) {
             app.use(express.static(staticOpts.folder));
             app.use(helmet());
