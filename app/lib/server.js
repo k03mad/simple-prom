@@ -16,7 +16,14 @@ import {registerMetrics} from './register.js';
  * @param {boolean} opts.debug
  * @param {string} opts.static
  */
-export const startMetricsServer = ({appName, port, metrics, metricsTurnOff, debug, static: staticOpts}) => {
+export const startMetricsServer = ({
+    appName,
+    port,
+    metrics,
+    metricsTurnOff,
+    debug,
+    static: staticOpts,
+}) => {
     const register = registerMetrics({appName, port, metrics, metricsTurnOff});
 
     const app = express();
@@ -44,9 +51,13 @@ export const startMetricsServer = ({appName, port, metrics, metricsTurnOff, debu
         res.send(data);
     });
 
-    app.listen(port, () => console.log([
-        `[${String(new Date())}]\n${nameText(appName)}`,
-        'started on port',
-        numText(port),
-    ].join(' ')));
+    app.listen(port, () =>
+        console.log(
+            [
+                `[${String(new Date())}]\n${nameText(appName)}`,
+                'started on port',
+                numText(port),
+            ].join(' '),
+        ),
+    );
 };

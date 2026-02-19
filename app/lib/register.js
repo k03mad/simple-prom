@@ -12,10 +12,8 @@ import client from 'prom-client';
 export const registerMetrics = ({appName, port, metrics, metricsTurnOff = []}) => {
     const filteredMetrics = metrics
         ? Object.fromEntries(
-            Object.entries(metrics).filter(
-                ([key]) => !metricsTurnOff.includes(key),
-            ),
-        )
+              Object.entries(metrics).filter(([key]) => !metricsTurnOff.includes(key)),
+          )
         : {};
 
     const register = new client.Registry();
@@ -23,26 +21,24 @@ export const registerMetrics = ({appName, port, metrics, metricsTurnOff = []}) =
     client.collectDefaultMetrics({register});
     register.setDefaultLabels({app: appName, port, host: os.hostname});
 
-    Object
-        .values(filteredMetrics)
-        .forEach(metric => {
-            const {collect, name, ...rest} = metric;
+    Object.values(filteredMetrics).forEach(metric => {
+        const {collect, name, ...rest} = metric;
 
-            const gauge = new client.Gauge({
-                name,
-                ...rest,
-                async collect() {
-                    try {
-                        await collect(this);
-                    } catch (err) {
-                        console.error(`>> ${name}`);
-                        console.error(err);
-                    }
-                },
-            });
-
-            register.registerMetric(gauge);
+        const gauge = new client.Gauge({
+            name,
+            ...rest,
+            async collect() {
+                try {
+                    await collect(this);
+                } catch (err) {
+                    console.error(`>> ${name}`);
+                    console.error(err);
+                }
+            },
         });
+
+        register.registerMetric(gauge);
+    });
 
     return register;
 };
