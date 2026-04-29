@@ -5,7 +5,7 @@ import client from 'prom-client';
 /**
  * @param {object} opts
  * @param {string} opts.appName
- * @param {string|number} opts.port
+ * @param {string | number} opts.port
  * @param {object} [opts.metrics]
  * @param {string[]} [opts.metricsTurnOff]
  */
