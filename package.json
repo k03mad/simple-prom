@@ -17,7 +17,7 @@
     "prepare": "husky || true"
   },
   "dependencies": {
-    "chalk": "5.6.2",
+    "chalk": "6.0.0",
     "compression": "1.8.1",
     "express": "5.2.1",
     "helmet": "8.3.0",
